@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>U.S. Food Deserts</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../static/vendor-2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="../static/vendor-2/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../static/vendor-2/fontawesome-free/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="../static/vendor-2/fontawesome-free/css/font-awesome.css.map" rel="stylesheet">
+  <link href="../static/vendor-2/fontawesome-free/css/font-awesome.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="../static/vendor-2/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="../static/css/stylish-portfolio.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+
+  <!-- highchart -->
+  <!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/countries/us/us-all-all.js"></script>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+ 
+  <!-- <script type="text/javascript" src="../static/js/multmapleaflet.js"></script> -->
+
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  
+  <!-- For plotly plots-->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">U.S Food Deserts</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">Definition</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#usmap">U.S. Food Desert Map</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#state">U.S. State Plot</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#pdx">Oregon - Multnomah County Map</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#multnomah">Multnomah County Insights</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#team">Meet the Team</a>
+      </li>
+    </ul>
+  </nav>
+ 
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">What is a Food Desert?</h1>
+      <h3 class="mb-5">
+        <em>A knowledge share of visualizations + data </em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>"Low-income census tracts with a substantial number or share of residents with low levels of access to retail outlets selling healthy and affordable foods"</h2>
+          <p class="lead mb-5">Food Desert - as defined by the
+            <a href="https://www.ers.usda.gov/amber-waves/2011/december/data-feature-mapping-food-deserts-in-the-us/">USDA</a></p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#usmap">Where are food Deserts?</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- US map -->
+  <section class="masthead d-flex" id="usmap">
+    <div class="container text-center">
+      <h1 class="mb-1">Where are Food Deserts?</h1>
+        <div class="fact-credit">Food Deserts - proportioned </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-6 mb-5 mb-md-0">
+            <!-- The div that holds our US Highchart Map-->
+            <div id="container" style="height: 500px; width: 700px; margin: 0 auto; text-align:center; line-height: 520px">
+              Downloading map...
+            </div>  
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- US Facts -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">United States</h3>
+        <h2 class="mb-5">Data Insights</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="text-secondary mb-0">39.4M (13% of US Pop.)</h1>
+              <p>People Living in a Food Desert </p>
+              <div class="fact-credit">-US Census Bureau: 2010 Census Data</div>
+        </div>
+        <div class="col-md-6">
+          If you are...
+              <h3>White: you are <b class="text-secondary mb-0">10%</b> less likely...</h3>
+              <h3>Black: you are <b class="text-secondary mb-0">10% more</b> likely...</h3>
+              <h3>Hispanic: you are <b class="text-secondary mb-0">4% more</b> likely...</h3>
+              <h3>Asian: you are <b class="text-secondary mb-0">3%</b> less likely...</h3>
+              <h2>...to live in a census tract described as a food desert in America.</h2>
+              <div class="other-races">(All other races in data set between 0-1% difference)</div>
+              <div class="fact-credit">-US Census Bureau: 2010 Census Data</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- U.S. States -->
+  <section id="state">
+      <div class="data-display-header">US States</div>
+      <div class="container">
+        <div class="row justify-content-center body-section" >
+          <div class="col-md-12">
+              <div class= "home-subject">
+                  <h2 class="summary">
+                      % of State's Consituents Living in Food Desert Census Tract by State Median Income
+                  </h2>
+                  <hr>
+                  <!-- Append National Stat chart here. -->
+                  <div id="scatter">
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+
+  <!-- Multnomah Leaflet Map -->
+  <section class="callout" id="pdx">
+    <div class="container text-center">
+      <!-- <h1 class="mb-1" id="mult-title"> -->
+        <h1 class="mb-1">What is happening close to
+        <em>HOME</em>
+        ? </h1>
+        <div class="row">
+          <div class="col-lg-12 col-md-6 mb-5 mb-md-0">
+            <!-- The div that holds Leaflet Multnomah Map-->
+            <div id="map"></div>
+          </div>
+        </div>
+      <h5>Percent of Multnomah County census tract with a supermarket more than 1/2 mile away</h5>
+
+    </div>
+  </section>
+
+
+  <!-- Plotly Plots -->
+  <section class="content-section" id="multnomah">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">More Visualizations</h3>
+        <h2 class="mb-5">Multnomah County</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <!-- For Plotly Plots coming in from plots.js-->
+          <div id="plot1"></div>
+        </div>
+        <div class="col-lg-6">
+          <!-- For Plotly Plots coming in from plots.js -->
+          <div id="plot2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======= Team Section ======= -->
+  <section id="team">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header">
+        <h3 class="text-secondary mb-0">Team</h3>
+        <p class="lead mb-5">Who put together this incredible project? </p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="member" data-aos="fade-up" data-aos-delay="100">
+            <img src="../static/img/team-p.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Paul Hardy</h4>
+                <!-- <span>I'M GOOD AT: </span> -->
+                <div class="social">
+                  <a href="https://github.com/paulfhardy"><i class="fa fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/paul-hardy-43140319"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="member" data-aos="fade-up" data-aos-delay="200">
+            <img src="../static/img/team-j.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>John Levear</h4>
+                <!-- <span>I'M GOOD AT:</span> -->
+                <div class="social">
+                  <a href="https://github.com/jlevear"><i class="fa fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/jlevear"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="member" data-aos="fade-up" data-aos-delay="300">
+            <img src="../static/img/team-b.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Brock Vriesman</h4>
+                <!-- <span>I'M GOOD AT: Eating food</span> -->
+                <div class="social">
+                  <a href="https://github.com/bandrewv"><i class="fa fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/brock-vriesman-02423b27"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="member" data-aos="fade-up" data-aos-delay="400">
+            <img src="../static/img/team-g.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>George Simon</h4>
+                <!-- <span>I'M GOOD AT:</span> -->
+                <div class="social">
+                  <a href="https://github.com/george-simon"><i class="fa fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/george-w-simon"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Team Section -->
+
+
+  <!-- GitHub Link Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/george-simon/US-Food-Deserts-Project2">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+        <p class="text-secondary mb-0">Check Out Our Code!</p>
+      </ul>
+      
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/vendor-2/jquery/jquery.min.js"></script>
+  <script src="../static/vendor-2/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../static/vendor-2/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../static/js/stylish-portfolio.js"></script>
+
+  <!-- Visualization js Code -->
+  <script type="text/javascript" src="../static/js/map.js"></script>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- API key -->
+  <script type="text/javascript" src="../static/js/config.js"></script>
+
+  <!-- Js for Leaflet Map -->
+  <script type="text/javascript" src="../static/js/multmapleaflet.js"></script>
+
+  <!-- National Data JavaScript -->
+  <script type="text/javascript" src="../static/js/nat_stat.js"></script>
+  
+  <!-- For Plotly Plots coming in from plots.js-->
+  <script src="../static/js/plots.js"></script>
+
+</body>
+
+</html>
