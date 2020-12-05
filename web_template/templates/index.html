@@ -59,16 +59,16 @@
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">U.S Food Deserts</a>
+        <a class="js-scroll-trigger" href="#page-top">Amazon Reviews NLP</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#page-top">Home</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">Definition</a>
+        <a class="js-scroll-trigger" href="#about">Hypothesis</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#usmap">U.S. Food Desert Map</a>
+        <a class="js-scroll-trigger" href="#def-neg">What is "Negative"?</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#state">U.S. State Plot</a>
@@ -88,7 +88,7 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1">Sticks and Stones May Break Our Bones...</h1>
+      <h1 class="mb-1">Can We Predict A Review Score Based on Wording Alone?</h1>
       <h3 class="mb-5">
         <em>A machine learning analysis regarding the effect of word-choice on Amazon review scores</em>
       </h3>
@@ -102,17 +102,17 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h2>"Low-income census tracts with a substantial number or share of residents with low levels of access to retail outlets selling healthy and affordable foods"</h2>
-          <p class="lead mb-5">Food Desert - as defined by the
-            <a href="https://www.ers.usda.gov/amber-waves/2011/december/data-feature-mapping-food-deserts-in-the-us/">USDA</a></p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#usmap">Where are food Deserts?</a>
+          <!-- Adjust formatting of next 2 lines -->
+          <h2>Hypothesis:</h2>
+          <h4>Will the relative frequency of negative words in the Tools reviewset hold predictive value across other product categories?</h4>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#def-neg">What's classified as "Negative"?</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- US map -->
-  <section class="masthead d-flex" id="usmap">
+  <section class="masthead d-flex" id="def-neg">
     <div class="container text-center">
       <h1 class="mb-1">Where are Food Deserts?</h1>
         <div class="fact-credit">Food Deserts - proportioned </div>
@@ -181,12 +181,6 @@
         <h1 class="mb-1">What is happening close to
         <em>HOME</em>
         ? </h1>
-        <div class="row">
-          <div class="col-lg-12 col-md-6 mb-5 mb-md-0">
-            <!-- The div that holds Leaflet Multnomah Map-->
-            <div id="map"></div>
-          </div>
-        </div>
       <h5>Percent of Multnomah County census tract with a supermarket more than 1/2 mile away</h5>
 
     </div>
