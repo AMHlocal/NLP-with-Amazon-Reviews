@@ -92,7 +92,7 @@
       <h3 class="mb-5">
         <em>A machine learning analysis regarding the effect of word-choice on Amazon review scores</em>
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about" style="background-color:#FF9900">Find Out More</a>
     </div>
     <div class="overlay"></div>
   </header>
@@ -103,9 +103,11 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <!-- Adjust formatting of next 2 lines -->
-          <h2>Hypothesis:</h2>
-          <h4>Will the relative frequency of negative words in the Tools reviewset hold predictive value across other product categories?</h4>
+          <hr>
+          <h2>Project Scope:</h2>
+          <h4>Will the relative frequency of negative words in Amazon's Tools reviewset hold predictive value concerning star rating?</h4>
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#def-neg">What's classified as "Negative"?</a>
+          <hr>
         </div>
       </div>
     </div>
@@ -114,13 +116,13 @@
   <!-- Definition of Negative section -->
   <section class="masthead d-flex" id="def-neg" style="background-image: url('../static/img/portfolio-1.jpg');">
     <div class="container text-center">
-      <h1 class="mb-1" style="color:white;font: size 20;">What are "Negative Words"?</h1>
-        <div class="fact-credit" style="color:lightgrey">Food Deserts - proportioned </div>
+      <h1 class="mb-1" style="color:rgb(167, 165, 165);font: size 20;">What are "Negative Words"?</h1>
         <div class="row">
           <div class="col-lg-12 col-md-6 mb-5 mb-md-0">
             <!-- The div that holds our US Highchart Map-->
-            <div id="container" style="height: 500px; width: 700px; margin: 0 auto; text-align:center; line-height: 520px">
-              Downloading map...
+            <hr><hr><hr>
+            <div id="container" style="font-size: 32px; margin: 400px auto; text-align:right; color:rgb(167, 165, 165);">
+              We started by selecting the most general set of negatives words with the belief that the aggregate negative word count and other ratios could be used on other categories of product reviews. The first set of data we tested, mainly relied on negative verb forms to like "cant'", won't, and didn't. We then researched to see if anyone else has created such a list. We found a list from the grammarly blog which had our basic list plus some adverbs. After running this list, we found that there were too many reviews that did not have any negative words but were obviously negative. so we looked at the reviews without any negative words and added words like "junk", "broken" and "returned" which gave us a much better result. We found a nice distribution when looking at average negative word count per rating review level.
             </div>  
           </div>
         </div>
@@ -131,14 +133,15 @@
   <section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
       <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">United States</h3>
+        <hr>
+        <h3 class="text-secondary mb-0">Introducing Our Reviewset</h3>
         <h2 class="mb-5">Data Insights</h2>
       </div>
+      <!-- Insert Tableau Vizzes here -->
       <div class="row">
         <div class="col-md-6">
-          <h1 class="text-secondary mb-0">39.4M (13% of US Pop.)</h1>
-              <p>People Living in a Food Desert </p>
-              <div class="fact-credit">-US Census Bureau: 2010 Census Data</div>
+          <h1 class="text-secondary mb-0">Choosing the Tools Reviewset</h1>
+              <p>There was a diverse selection of Amazon product categories to choose from, varying from Music, to Tools, to Digital EBook Purchases. We settled on the Tools Reviewset because of the relatively objective experience of using a tool.</p>
         </div>
         <div class="col-md-6">
           If you are...
@@ -151,23 +154,23 @@
               <div class="fact-credit">-US Census Bureau: 2010 Census Data</div>
         </div>
       </div>
+      <hr>
     </div>
   </section>
 
-  <!-- U.S. States -->
+  <!-- Findings -->
   <section id="state">
-      <div class="data-display-header">US States</div>
+      <div class="data-display-header">Tools Reviewset Vizzes</div>
       <div class="container">
         <div class="row justify-content-center body-section" >
           <div class="col-md-12">
               <div class= "home-subject">
-                  <h2 class="summary">
-                      % of State's Consituents Living in Food Desert Census Tract by State Median Income
-                  </h2>
                   <hr>
-                  <!-- Append National Stat chart here. -->
-                  <div id="scatter">
+                  <!-- Append regression model here -->
+                  <div class='tableauPlaceholder' id='viz1607399472632' style='position: relative'><noscript><a href='#'>
+                  <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;Amazon_Review_Vis&#47;StarRatingVotesOverTime&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Amazon_Review_Vis&#47;StarRatingVotesOverTime' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;Amazon_Review_Vis&#47;StarRatingVotesOverTime&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1607399472632');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                   </div>
+                  <hr>
               </div>
           </div>
       </div>
@@ -178,10 +181,12 @@
   <section class="callout" id="pdx">
     <div class="container text-center">
       <!-- <h1 class="mb-1" id="mult-title"> -->
-        <h1 class="mb-1">What is happening close to
-        <em>HOME</em>
-        ? </h1>
-      <h5>Percent of Multnomah County census tract with a supermarket more than 1/2 mile away</h5>
+        <h1 class="mb-1">Machine Learning Insights</h1>
+      <h5>Description of Natural Language Processing machine</h5> <!-- Insert Colab button here-->
+      <h5>Initial findings</h5>
+      <h5>INESRT GROUPBY MEAN DF GRAB HERE</h5>
+      <h5>Linear Regression hardships</h5>
+
 
     </div>
   </section>
@@ -191,8 +196,10 @@
   <section class="content-section" id="multnomah">
     <div class="container">
       <div class="content-section-heading text-center">
+        <hr>
         <h3 class="text-secondary mb-0">More Visualizations</h3>
         <h2 class="mb-5">Multnomah County</h2>
+        <hr>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
@@ -212,8 +219,10 @@
   <section id="team">
     <div class="container" data-aos="fade-up">
       <div class="section-header">
+        <hr>
         <h3 class="text-secondary mb-0">Team Cobra Kai</h3>
         <p class="lead mb-5">Who put together this project? </p>
+        <hr>
       </div>
 
       <div class="row">
@@ -281,9 +290,8 @@
             </div>
           </div>
         </div>
-
       </div>
-
+      <hr>
     </div>
   </section><!-- End Team Section -->
 
