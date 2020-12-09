@@ -71,13 +71,13 @@
         <a class="js-scroll-trigger" href="#def-neg">What does "Negative" mean?</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#state">U.S. State Plot</a>
+        <a class="js-scroll-trigger" href="#dataset">Choosing Our Data</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#pdx">Oregon - Multnomah County Map</a>
+        <a class="js-scroll-trigger" href="#tableau">Tableau Vizzes</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#multnomah">Multnomah County Insights</a>
+        <a class="js-scroll-trigger" href="#machlearn">Machine Learning Insights</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#team">Meet the Team</a>
@@ -104,7 +104,7 @@
         <div class="col-lg-10 mx-auto">
           <!-- Adjust formatting of next 2 lines -->
           <hr>
-          <h2>Project Scope:</h2>
+          <h2><u>Project Scope:</u></h2>
           <h4>Will the relative frequency of negative words in Amazon's Tools reviewset hold predictive value concerning star rating?</h4>
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#def-neg">What's classified as "Negative"?</a>
           <hr>
@@ -122,13 +122,10 @@
           <div class="col-md-8 mx-auto">
             <!-- Methodology of Negative Word Selection section-->
             <div id="container" style="font-size: 32px; margin: 50px auto; text-align:left; color:black;">
-              Merriam-Webster describes the word 'negative' as being "Adverse... unfavorable... [or] lacking positive qualities".
-              <br/>Word List:
+              Merriam-Webster describes the word 'negative' as being "Adverse... unfavorable... [or] lacking positive qualities". <br/>From this definition, we developed an initial list of words that we believed might indicate a negative review. Once we developed the initial list, we decided that we needed to validate our list against an outside source. For this outside source, we chose this
+              <a href="https://www.grammarly.com/blog/negatives/">Grammarly blog.</a>
+              <br/><br/>Final Word List:
               <img src="../static/img/neg_list.png" alt="NegativeWordList">
-              <p style="padding-top: 2rem;"><em>Our methodology selected general negatives words is outlined in </em><a href="https://github.com/AMHlocal/final-project/blob/main/README.md">our repository.</a></p>
-              <div class="col-md-12">
-                
-              </div>
             </div>  
           </div>
         </div>
@@ -136,7 +133,7 @@
   </section>
 
   <!-- Introducing Our Reviewset section -->
-  <section class="content-section bg-primary text-white text-center" id="services">
+  <section class="content-section bg-primary text-white text-center" id="dataset">
     <div class="container col-md-10">
       <div class="content-section-heading">
         <h2 class="text-secondary mb-0" style="text-align: left;"><u>Choosing the Tools Reviewset</u></h2>
@@ -156,8 +153,8 @@
   </section>
 
   <!-- Findings -->
-  <section id="state">
-      <div class="data-display-header">Tools Reviewset Vizzes</div>
+  <section id="tableau">
+    <div class="data-display-header">Tools Reviewset Vizzes</div>
       <div class="container">
         <div class="row justify-content-center body-section" >
           <div class="col-md-12">
@@ -175,52 +172,64 @@
   </section>
 
   <!-- Machine Learning section -->
-  <section class="callout" id="machinelearning">
-    <div class="container text-center col-md-12">
+  <section class="callout" id="machlearn">
+    <div class="data-display-header">
       <h1 class="mb-1">Machine Learning Insights</h1>
-        <h3>@100 Rows: <b class="text-secondary mb-0">r<sup>2</sup>: 0.516736</b> RMSE: 0.868821</h3>
-        <h3>@100,000 Rows: <b class="text-secondary mb-0">r<sup>2</sup>: 0.160891</b> RMSE: 1.101897</h3>
-        <h3>@1,740,974 Rows: <b class="text-secondary mb-0">r<sup>2</sup>: 0.145876</b> RMSE: 1.093395</h3>
-      <h5>Description of Natural Language Processing machine</h5> <!-- Insert Colab button here-->
-      
-      <h5>Initial findings</h5>
-        <img src="../static/img/tools_stats.png" style="width:450px;height:150px;">
-        <img src="../static/img/grocery_stats.png" style="width:450px;height:150px;">
-      
-      <h5>Linear Regression hardships</h5>
-        <img src="../static/img/tools_prediction.png" style="width:650px;height:500px;">
-        <img src="../static/img/grocery_prediction.png" style="width:650px;height:500px;">
-      <div id="bottom">
-        <a href="https://colab.research.google.com/drive/1BdG5y4IqwRs6EKvSisHA0t6g7WQLytfd#scrollTo=lUgTRsK9fvJy">
-          <img src="../static/img/colab.png" alt="Google Colab" style="width:25px;height:25px;">
-          Check Out Our Tools Colab Notebook!
-        </a>
-        <a href="https://colab.research.google.com/drive/1EhTNpSDT75Tf9saHuKiaOX9jdbQ6JCeF?usp=sharing">
-          <img src="../static/img/colab.png" alt="Google Colab" style="width:25px;height:25px;">
-          Check Out Our Groceries Colab Notebook!
-        </a>
+    </div>
+
+    <div>
+      <h3>Natural Language Processing</h3>
+        <h5>“Natural Language Processing, or NLP for short, is broadly defined as the automatic manipulation of natural language, like speech and text, by software.”</h5>
+        <p class="lead mb-5" style="font-size: 12pt;">-Jason Brownlee, 
+          <a href="MachineLearningMastery.com">MachineLearningMastery.com</a></p>
+
+    <!-- Initial findings w/ images -->
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Initial findings</h3>
+            <p style="font-size:12pt; text-align: left; font-weight: 550;">Using linear regression as our model of choice at first seemed to be the right path to take as we saw the ratio of average negative word count to average word count decrease as the star ratings went up but once applied to the machine no clear outcome arise.</p>
+            <img src="../static/img/tools_stats.png" style="width:450px;height:150px; padding-left: 1rem;">
+            <img src="../static/img/grocery_stats.png" style="width:450px;height:150px;">
+        </div>
+
+    <!-- Machine learning summary stats -->
+        <div class="col-sm-6" style="text-align:right; padding-right: 2rem; padding-top: 6rem;">
+          <h5>@100 Rows: <b class="text-secondary mb-0" style="font-size: 20pt;">r<sup>2</sup>: 0.516736</b> RMSE: 0.868821</h5>
+          <h5>@100,000 Rows: <b class="text-secondary mb-0" style="font-size: 20pt;">r<sup>2</sup>: 0.160891</b> RMSE: 1.101897</h5>
+          <h5>@1,740,974 Rows: <b class="text-secondary mb-0" style="font-size: 20pt;">r<sup>2</sup>: 0.145876</b> RMSE: 1.093395</h5>
+        </div>
+      </div>
+
+      <!-- Initial findings' images -->
+      <div style="text-align:center; padding-top: 2rem; padding-left: 1rem;">
+        <h3 style="float:center;">Linear Regression hardships</h3>
+          <img src="../static/img/tools_prediction.png" style="width:650px;height:500px;">
+          <img src="../static/img/grocery_prediction.png" style="width:650px;height:500px;">
+      </div>
+
+        <!-- Link to colab notebooks section -->
+      <div style="text-align:center; padding-left: 1rem;">
+          <a href="https://colab.research.google.com/drive/1BdG5y4IqwRs6EKvSisHA0t6g7WQLytfd#scrollTo=lUgTRsK9fvJy">
+            <img src="../static/img/colab.png" alt="Google Colab" style="width:25px;height:25px;">
+            Check Out Our Tools Colab Notebook!
+          </a>
+          <a href="https://colab.research.google.com/drive/1EhTNpSDT75Tf9saHuKiaOX9jdbQ6JCeF?usp=sharing">
+            <img src="../static/img/colab.png" alt="Google Colab" style="width:25px;height:25px;">
+            Check Out Our Groceries Colab Notebook!
+          </a>
       </div>
     </div>
-  </section>
 
-  <!-- Plotly Plots -->
-  <section class="content-section" id="multnomah">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <hr>
-        <h2 class="mb-5">Findings</h2>
-        <hr>
+    <!-- Initial findings w/ images -->
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4">
+        <p style="font-size:12pt; text-align: left; font-weight: 550;">Based on how we ran our NLP machine using Linear Regression, our outcome - the ability to predict the star rating of reviews from the amount of negative words - is inconclusive. If we were to do another NLP machine learning project, we would test more than one linear regression model. These models would start by using a Random Forest to select the best features to analyze; in our case we did not use this because the bulk of our usable data was text.</p>
       </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <!-- For Plotly Plots coming in from plots.js-->
-          <div id="plot1"></div>
-        </div>
-        <div class="col-lg-6">
-          <!-- For Plotly Plots coming in from plots.js -->
-          <div id="plot2"></div>
-        </div>
+      <div class="col-sm-4">
+        <p style="font-size:12pt; text-align: left; font-weight: 550;">After that we would use models such has K-nearest neighbors, Support Vector Machines (SVM), and/or Naïve Bayes. These models would either group the data points closer or, redarding Naïve Bayes, would quantify the likelihood of the event happening based upon the kowledge that the event has occurred in the past.</p>
       </div>
+      <div class="col-sm-2"></div>
     </div>
   </section>
 
@@ -230,7 +239,7 @@
     <div class="container" data-aos="fade-up">
       <div class="section-header">
         <hr>
-        <h3 class="text-secondary mb-0">Team Cobra Kai</h3>
+        <h3 class="text-secondary mb-0"><u>Team Cobra Kai</u></h3>
         <p class="lead mb-5">Who put together this project? </p>
         <hr>
       </div>
