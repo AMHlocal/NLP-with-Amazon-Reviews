@@ -4,6 +4,8 @@
 Members:
 George Simon, Patrick Leon, Fred Mansfield, Austin Hauck
 
+# Methodology
+
 # Git Notes 
 1. Before starting 'new' work: git checkout main
 2. git pull origin main

@@ -114,44 +114,41 @@
   </section>
 
   <!-- Definition of Negative section -->
+  <!-- Background image and Negative Words introduction-->
   <section class="masthead d-flex" id="def-neg" style="background-image: url('../static/img/portfolio-1.jpg');">
-    <div class="container text-center">
-      <h1 class="mb-1" style="color:rgb(167, 165, 165);font: size 20;">What are "Negative Words"?</h1>
+    <div class="container text-center col-lg-12">
+      <h1 class="mb-1" style="color:black;font: size 20;">What are "Negative Words"?</h1>
         <div class="row">
-          <div class="col-lg-12 col-md-6 mb-5 mb-md-0">
-            <!-- The div that holds our US Highchart Map-->
-            <hr><hr><hr>
-            <div id="container" style="font-size: 32px; margin: 400px auto; text-align:right; color:rgb(167, 165, 165);">
-              We started by selecting the most general set of negatives words with the belief that the aggregate negative word count and other ratios could be used on other categories of product reviews. The first set of data we tested, mainly relied on negative verb forms to like "cant'", won't, and didn't. We then researched to see if anyone else has created such a list. We found a list from the grammarly blog which had our basic list plus some adverbs. After running this list, we found that there were too many reviews that did not have any negative words but were obviously negative. so we looked at the reviews without any negative words and added words like "junk", "broken" and "returned" which gave us a much better result. We found a nice distribution when looking at average negative word count per rating review level.
+          <div class="col-md-8 mx-auto">
+            <!-- Methodology of Negative Word Selection section-->
+            <div id="container" style="font-size: 32px; margin: 50px auto; text-align:left; color:black;">
+              Merriam-Webster describes the word 'negative' as being "Adverse... unfavorable... [or] lacking positive qualities".
+              <br/>Word List:
+              <img src="../static/img/neg_list.png" alt="NegativeWordList">
+              <p style="padding-top: 2rem;"><em>Our methodology selected general negatives words is outlined in </em><a href="https://github.com/AMHlocal/final-project/blob/main/README.md">our repository.</a></p>
+              <div class="col-md-12">
+                
+              </div>
             </div>  
           </div>
         </div>
     </div>
   </section>
 
-  <!-- US Facts -->
+  <!-- Introducing Our Reviewset section -->
   <section class="content-section bg-primary text-white text-center" id="services">
-    <div class="container">
+    <div class="container col-md-10">
       <div class="content-section-heading">
+        <h2 class="text-secondary mb-0" style="text-align: left;"><u>Choosing the Tools Reviewset</u></h2>
         <hr>
-        <h3 class="text-secondary mb-0">Introducing Our Reviewset</h3>
-        <h2 class="mb-5">Data Insights</h2>
       </div>
-      <!-- Insert Tableau Vizzes here -->
       <div class="row">
-        <div class="col-md-6">
-          <h1 class="text-secondary mb-0">Choosing the Tools Reviewset</h1>
-              <p>There was a diverse selection of Amazon product categories to choose from, varying from Music, to Tools, to Digital EBook Purchases. We settled on the Tools Reviewset because of the relatively objective experience of using a tool.</p>
+        <div class="col-md-8">
+          <br/>
+          <p style="font-size: 24pt; text-align: left;">There was a diverse selection of Amazon product categories to choose from, varying from Music, to Tools, to Digital EBook Purchases. We settled on the Tools Reviewset because of the objective experience of using a tool; the tool either performs its function, or it does not.</p>
         </div>
-        <div class="col-md-6">
-          If you are...
-              <h3>White: you are <b class="text-secondary mb-0">10%</b> less likely...</h3>
-              <h3>Black: you are <b class="text-secondary mb-0">10% more</b> likely...</h3>
-              <h3>Hispanic: you are <b class="text-secondary mb-0">4% more</b> likely...</h3>
-              <h3>Asian: you are <b class="text-secondary mb-0">3%</b> less likely...</h3>
-              <h2>...to live in a census tract described as a food desert in America.</h2>
-              <div class="other-races">(All other races in data set between 0-1% difference)</div>
-              <div class="fact-credit">-US Census Bureau: 2010 Census Data</div>
+        <div class="col-md-4">
+          <img src="../static/img/tensorflow.png" style="width:500px;height:200x;">
         </div>
       </div>
       <hr>
@@ -164,41 +161,54 @@
       <div class="container">
         <div class="row justify-content-center body-section" >
           <div class="col-md-12">
-              <div class= "home-subject">
-                  <hr>
-                  <!-- Append regression model here -->
-                  <div class='tableauPlaceholder' id='viz1607399472632' style='position: relative'><noscript><a href='#'>
-                  <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;Amazon_Review_Vis&#47;StarRatingVotesOverTime&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Amazon_Review_Vis&#47;StarRatingVotesOverTime' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;Amazon_Review_Vis&#47;StarRatingVotesOverTime&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1607399472632');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                  </div>
-                  <hr>
-              </div>
+            <div class= "home-subject">
+            <hr>
+            <!-- Append Tablezu Vizzes here -->
+              <div class='tableauPlaceholder' id='viz1607399472632' style='position: relative'><noscript><a href='#'>
+              <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;Amazon_Review_Vis&#47;StarRatingVotesOverTime&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Amazon_Review_Vis&#47;StarRatingVotesOverTime' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;Amazon_Review_Vis&#47;StarRatingVotesOverTime&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1607399472632');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+            <hr>
           </div>
+        </div>
       </div>
       </div>
   </section>
 
-  <!-- Multnomah Leaflet Map -->
-  <section class="callout" id="pdx">
-    <div class="container text-center">
-      <!-- <h1 class="mb-1" id="mult-title"> -->
-        <h1 class="mb-1">Machine Learning Insights</h1>
+  <!-- Machine Learning section -->
+  <section class="callout" id="machinelearning">
+    <div class="container text-center col-md-12">
+      <h1 class="mb-1">Machine Learning Insights</h1>
+        <h3>@100 Rows: <b class="text-secondary mb-0">r<sup>2</sup>: 0.516736</b> RMSE: 0.868821</h3>
+        <h3>@100,000 Rows: <b class="text-secondary mb-0">r<sup>2</sup>: 0.160891</b> RMSE: 1.101897</h3>
+        <h3>@1,740,974 Rows: <b class="text-secondary mb-0">r<sup>2</sup>: 0.145876</b> RMSE: 1.093395</h3>
       <h5>Description of Natural Language Processing machine</h5> <!-- Insert Colab button here-->
+      
       <h5>Initial findings</h5>
-      <h5>INESRT GROUPBY MEAN DF GRAB HERE</h5>
+        <img src="../static/img/tools_stats.png" style="width:450px;height:150px;">
+        <img src="../static/img/grocery_stats.png" style="width:450px;height:150px;">
+      
       <h5>Linear Regression hardships</h5>
-
-
+        <img src="../static/img/tools_prediction.png" style="width:650px;height:500px;">
+        <img src="../static/img/grocery_prediction.png" style="width:650px;height:500px;">
+      <div id="bottom">
+        <a href="https://colab.research.google.com/drive/1BdG5y4IqwRs6EKvSisHA0t6g7WQLytfd#scrollTo=lUgTRsK9fvJy">
+          <img src="../static/img/colab.png" alt="Google Colab" style="width:25px;height:25px;">
+          Check Out Our Tools Colab Notebook!
+        </a>
+        <a href="https://colab.research.google.com/drive/1EhTNpSDT75Tf9saHuKiaOX9jdbQ6JCeF?usp=sharing">
+          <img src="../static/img/colab.png" alt="Google Colab" style="width:25px;height:25px;">
+          Check Out Our Groceries Colab Notebook!
+        </a>
+      </div>
     </div>
   </section>
-
 
   <!-- Plotly Plots -->
   <section class="content-section" id="multnomah">
     <div class="container">
       <div class="content-section-heading text-center">
         <hr>
-        <h3 class="text-secondary mb-0">More Visualizations</h3>
-        <h2 class="mb-5">Multnomah County</h2>
+        <h2 class="mb-5">Findings</h2>
         <hr>
       </div>
       <div class="row no-gutters">
