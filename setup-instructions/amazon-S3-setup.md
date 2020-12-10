@@ -84,5 +84,7 @@ All activities in the Big Data unit will use free tier services. However, it is 
 
     ![Images/confirm_policy.png](Images/confirm_policy.png)
 
+    * The object should now be accessible by all.
+
 
 * **Note:** You can remove public access anytime by repeating the steps above and checking all the boxes in **Edit public access settings**.
