@@ -6,21 +6,22 @@ All activities in the Big Data unit will use free tier services. However, it is 
 
 # Cloud Storage on S3
 
-* Go to **console.aws.amazon.com** and select **S3** under **Storage**.
+* Go to **console.aws.amazon.com**. The top left of the page there should be **Services** carrot.
+  * Select **S3** under **Storage**.
 
-![s3 console](Images/s3_console.png)
+![s3 console](Images/S3-1.PNG)
 
 * Click **Create bucket**.
 
-![click create](Images/create_bucket.png)
+![click create](Images/S3-2.png)
 
-* Create a bucket name and choose the region.
+* Create a bucket name of your choice and choose the region.
 
-* **Note:** The bucket name must be unique across all existing bucket names in Amazon S3. Buckets cannot be renamed or created inside of another bucket.
+* **Please Note:** The bucket name must be unique across all existing bucket names in Amazon S3. Buckets cannot be renamed or created inside of another bucket.
 
-* Leave the region as the default, e.g. `US East (N. Virginia)`. Changing the region will change the object URL used in all examples today.
+* Leave the region as the default, e.g. `US East (Ohio)`. Changing the region will change the object URL used in all examples today.
 
-![Images/s301.png](Images/s301.png)
+![Images/s301.png](Images/S3-3.png)
 
 * Most of the options on the **Configure Options** page can be left as default values.
 
@@ -46,19 +47,18 @@ All activities in the Big Data unit will use free tier services. However, it is 
 
     ![Images/s305.png](Images/s305.png)
 
-* We'll now upload an image file to the newly created bucket. Click the bucket name and then click **Upload**.
+* You can now upload your documents. Click the bucket name and then click **Upload**.
 
   * A file can be dragged to the screen.
 
   * Click **Upload**.
 
-    ![Images/s315.png](Images/s315.png)
-
-    ![Images/s316.png](Images/s316.png)
+    ![Images/s315.png](Images/S3-4.png)
+    ![Images/s315.png](Images/S3-5.png)
 
   * Click the filename.
 
-    ![Images/s317.png](Images/s317.png)
+    ![Images/s317.png](Images/S3-6.png)
 
   * Clicking the link leads to an error message! Why?
 
@@ -70,11 +70,11 @@ All activities in the Big Data unit will use free tier services. However, it is 
 
   * Navigate back to the dashboard by clicking **Amazon S3** on the top left.
 
-    ![Images/s3_dashboard](Images/s3_dashboard.png)
+    ![Images/s3_dashboard](Images/S3-7.png)
 
   * Check the box next to your bucket and click **Edit public access settings**.
 
-    ![Images/edit_public.png](Images/edit_public.png)
+    ![Images/edit_public.png](Images/S3-8.png)
 
   * Make sure all boxes are unchecked on the next screen. Even though these were checked in the initial setup, they will not be now.
 
