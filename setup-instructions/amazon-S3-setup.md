@@ -29,8 +29,6 @@ All activities in the Big Data unit will use free tier services. However, it is 
 
 * Click **Next**.
 
-![Images/s302.png](Images/s302.png)
-
 * The **Set Permissions** page is where we grant others permission to access buckets.
 
   * A number of [security breaches](https://securityboulevard.com/2018/01/leaky-buckets-10-worst-amazon-s3-breaches/) were caused by unsecured S3 buckets.
@@ -42,8 +40,6 @@ All activities in the Big Data unit will use free tier services. However, it is 
     ![Images/s303.png](Images/s303.png)
 
 * The **Review** page is a summary of the bucket configurations. Click **Create bucket**. The bucket name now appears in the S3 console.
-
-    ![Images/s304.png](Images/s304.png)
 
     ![Images/s305.png](Images/s305.png)
 
