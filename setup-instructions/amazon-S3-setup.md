@@ -58,8 +58,6 @@ All activities in the Big Data unit will use free tier services. However, it is 
 
   * Clicking the link leads to an error message! Why?
 
-    ![Images/s308.png](Images/s308.png)
-
     ![Images/s309.png](Images/s309.png)
 
   * By default, the permission for the file denies access to everyone, so it needs to be changed.
