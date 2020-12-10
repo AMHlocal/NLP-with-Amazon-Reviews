@@ -71,13 +71,13 @@
         <a class="js-scroll-trigger" href="#def-neg">What does "Negative" mean?</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#state">U.S. State Plot</a>
+        <a class="js-scroll-trigger" href="#dataset">Choosing Our Data</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#pdx">Oregon - Multnomah County Map</a>
+        <a class="js-scroll-trigger" href="#tableau">Tableau Vizzes</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#multnomah">Multnomah County Insights</a>
+        <a class="js-scroll-trigger" href="#machlearn">Machine Learning Insights</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#team">Meet the Team</a>
@@ -92,7 +92,7 @@
       <h3 class="mb-5">
         <em>A machine learning analysis regarding the effect of word-choice on Amazon review scores</em>
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about" style="background-color:#FF9900">Find Out More</a>
     </div>
     <div class="overlay"></div>
   </header>
@@ -103,107 +103,129 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <!-- Adjust formatting of next 2 lines -->
-          <h2>Hypothesis:</h2>
-          <h4>Will the relative frequency of negative words in the Tools reviewset hold predictive value across other product categories?</h4>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#def-neg">What's classified as "Negative"?</a>
+          <hr>
+          <h2><u>Project Scope:</u></h2>
+          <h4>Will the relative frequency of negative words in Amazon's Tools reviewset hold predictive value concerning star rating?</h4>
+          <hr>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Definition of Negative section -->
+  <!-- Background image and Negative Words introduction-->
   <section class="masthead d-flex" id="def-neg" style="background-image: url('../static/img/portfolio-1.jpg');">
-    <div class="container text-center">
-      <h1 class="mb-1" style="color:white;font: size 20;">What are "Negative Words"?</h1>
-        <div class="fact-credit" style="color:lightgrey">Food Deserts - proportioned </div>
+    <div class="container text-center col-lg-12">
+      <h1 class="mb-1" style="color:black;font: size 20;">What are "Negative Words"?</h1>
         <div class="row">
-          <div class="col-lg-12 col-md-6 mb-5 mb-md-0">
-            <!-- The div that holds our US Highchart Map-->
-            <div id="container" style="height: 500px; width: 700px; margin: 0 auto; text-align:center; line-height: 520px">
-              Downloading map...
+          <div class="col-md-8 mx-auto">
+            <!-- Methodology of Negative Word Selection section-->
+            <div id="container" style="font-size: 32px; margin: 50px auto; text-align:left; color:black;">
+              Merriam-Webster describes the word 'negative' as being "Adverse... unfavorable... [or] lacking positive qualities". <br/>From this definition, we developed an initial list of words that we believed might indicate a negative review. Once we developed the initial list, we decided that we needed to validate our list against an outside source. For this outside source, we chose this
+              <a href="https://www.grammarly.com/blog/negatives/">Grammarly blog.</a>
+              <br/><br/>Final Word List:
+              <img src="../static/img/neg_list.png" alt="NegativeWordList">
             </div>  
           </div>
         </div>
     </div>
   </section>
 
-  <!-- US Facts -->
-  <section class="content-section bg-primary text-white text-center" id="services">
-    <div class="container">
+  <!-- Introducing Our Reviewset section -->
+  <section class="content-section bg-primary text-white text-center" id="dataset">
+    <div class="container col-md-10">
       <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">United States</h3>
-        <h2 class="mb-5">Data Insights</h2>
+        <h2 class="text-secondary mb-0" style="text-align: left;"><u>Choosing the Tools Reviewset</u></h2>
+        <hr>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <h1 class="text-secondary mb-0">39.4M (13% of US Pop.)</h1>
-              <p>People Living in a Food Desert </p>
-              <div class="fact-credit">-US Census Bureau: 2010 Census Data</div>
-        </div>
-        <div class="col-md-6">
-          If you are...
-              <h3>White: you are <b class="text-secondary mb-0">10%</b> less likely...</h3>
-              <h3>Black: you are <b class="text-secondary mb-0">10% more</b> likely...</h3>
-              <h3>Hispanic: you are <b class="text-secondary mb-0">4% more</b> likely...</h3>
-              <h3>Asian: you are <b class="text-secondary mb-0">3%</b> less likely...</h3>
-              <h2>...to live in a census tract described as a food desert in America.</h2>
-              <div class="other-races">(All other races in data set between 0-1% difference)</div>
-              <div class="fact-credit">-US Census Bureau: 2010 Census Data</div>
+        <div class="col-md-8">
+          <br/>
+          <p style="font-size: 24pt; text-align: left;">There was a diverse selection of Amazon product categories to choose from, varying from Music, to Tools, to Digital EBook Purchases. We settled on the Tools Reviewset because of the objective experience of using a tool.</p>
         </div>
       </div>
+      <hr>
     </div>
   </section>
 
-  <!-- U.S. States -->
-  <section id="state">
-      <div class="data-display-header">US States</div>
+  <!-- Findings -->
+  <section id="tableau">
+    <div class="data-display-header">Tools Reviewset Vizzes</div>
       <div class="container">
         <div class="row justify-content-center body-section" >
           <div class="col-md-12">
-              <div class= "home-subject">
-                  <h2 class="summary">
-                      % of State's Consituents Living in Food Desert Census Tract by State Median Income
-                  </h2>
-                  <hr>
-                  <!-- Append National Stat chart here. -->
-                  <div id="scatter">
-                  </div>
-              </div>
+            <div class= "home-subject">
+            <hr>
+            <!-- Append Tablezu Vizzes here -->
+              <div class='tableauPlaceholder' id='viz1607399472632' style='position: relative'><noscript><a href='#'>
+              <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;Amazon_Review_Vis&#47;StarRatingVotesOverTime&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Amazon_Review_Vis&#47;StarRatingVotesOverTime' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;Amazon_Review_Vis&#47;StarRatingVotesOverTime&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1607399472632');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+            <hr>
           </div>
+        </div>
       </div>
       </div>
   </section>
 
-  <!-- Multnomah Leaflet Map -->
-  <section class="callout" id="pdx">
-    <div class="container text-center">
-      <!-- <h1 class="mb-1" id="mult-title"> -->
-        <h1 class="mb-1">What is happening close to
-        <em>HOME</em>
-        ? </h1>
-      <h5>Percent of Multnomah County census tract with a supermarket more than 1/2 mile away</h5>
-
+  <!-- Machine Learning section -->
+  <section class="callout" id="machlearn">
+    <div class="data-display-header">
+      <h1 class="mb-1">Machine Learning Insights</h1>
     </div>
-  </section>
 
+    <div>
+      <h3>Natural Language Processing</h3>
+        <h5>“Natural Language Processing, or NLP for short, is broadly defined as the automatic manipulation of natural language, like speech and text, by software.”</h5>
+        <p class="lead mb-5" style="font-size: 12pt;">-Jason Brownlee, 
+          <a href="MachineLearningMastery.com">MachineLearningMastery.com</a></p>
 
-  <!-- Plotly Plots -->
-  <section class="content-section" id="multnomah">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">More Visualizations</h3>
-        <h2 class="mb-5">Multnomah County</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <!-- For Plotly Plots coming in from plots.js-->
-          <div id="plot1"></div>
+    <!-- Initial findings w/ images -->
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Initial findings</h3>
+            <p style="font-size:12pt; text-align: left; font-weight: 550;">Using linear regression as our model of choice at first seemed to be the right path to take as we saw the ratio of average negative word count to average word count decrease as the star ratings went up but once applied to the machine no clear outcome arise.</p>
+            <img src="../static/img/tools_stats.png" style="width:450px;height:150px; padding-left: 1rem;">
+            <img src="../static/img/grocery_stats.png" style="width:450px;height:150px;">
         </div>
-        <div class="col-lg-6">
-          <!-- For Plotly Plots coming in from plots.js -->
-          <div id="plot2"></div>
+
+    <!-- Machine learning summary stats -->
+        <div class="col-sm-6" style="text-align:right; padding-right: 2rem; padding-top: 6rem;">
+          <h5>@100 Rows: <b class="text-secondary mb-0" style="font-size: 20pt;">r<sup>2</sup>: 0.516736</b> RMSE: 0.868821</h5>
+          <h5>@100,000 Rows: <b class="text-secondary mb-0" style="font-size: 20pt;">r<sup>2</sup>: 0.160891</b> RMSE: 1.101897</h5>
+          <h5>@1,740,974 Rows: <b class="text-secondary mb-0" style="font-size: 20pt;">r<sup>2</sup>: 0.145876</b> RMSE: 1.093395</h5>
         </div>
       </div>
+
+      <!-- Initial findings' images -->
+      <div style="text-align:center; padding-top: 2rem; padding-left: 1rem;">
+        <h3 style="float:center;">Linear Regression hardships</h3>
+          <img src="../static/img/tools_prediction.png" style="width:650px;height:500px;">
+          <img src="../static/img/grocery_prediction.png" style="width:650px;height:500px;">
+      </div>
+
+        <!-- Link to colab notebooks section -->
+      <div style="text-align:center; padding-left: 1rem;">
+          <a href="https://colab.research.google.com/drive/1BdG5y4IqwRs6EKvSisHA0t6g7WQLytfd#scrollTo=lUgTRsK9fvJy">
+            <img src="../static/img/colab.png" alt="Google Colab" style="width:25px;height:25px;">
+            Check Out Our Tools Colab Notebook!
+          </a>
+          <a href="https://colab.research.google.com/drive/1EhTNpSDT75Tf9saHuKiaOX9jdbQ6JCeF?usp=sharing">
+            <img src="../static/img/colab.png" alt="Google Colab" style="width:25px;height:25px;">
+            Check Out Our Groceries Colab Notebook!
+          </a>
+      </div>
+    </div>
+
+    <!-- Initial findings w/ images -->
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4">
+        <p style="font-size:12pt; text-align: left; font-weight: 550;">Based on how we ran our NLP machine using Linear Regression, our outcome - the ability to predict the star rating of reviews from the amount of negative words - is inconclusive. If we were to do another NLP machine learning project, we would test more than one linear regression model. These models would start by using a Random Forest to select the best features to analyze; in our case we did not use this because the bulk of our usable data was text.</p>
+      </div>
+      <div class="col-sm-4">
+        <p style="font-size:12pt; text-align: left; font-weight: 550;">After that we would use models such has K-nearest neighbors, Support Vector Machines (SVM), and/or Naïve Bayes. These models would either group the data points closer or, redarding Naïve Bayes, would quantify the likelihood of the event happening based upon the kowledge that the event has occurred in the past.</p>
+      </div>
+      <div class="col-sm-2"></div>
     </div>
   </section>
 
@@ -212,8 +234,10 @@
   <section id="team">
     <div class="container" data-aos="fade-up">
       <div class="section-header">
-        <h3 class="text-secondary mb-0">Team Cobra Kai</h3>
+        <hr>
+        <h3 class="text-secondary mb-0"><u>Team Cobra Kai</u></h3>
         <p class="lead mb-5">Who put together this project? </p>
+        <hr>
       </div>
 
       <div class="row">
@@ -281,9 +305,8 @@
             </div>
           </div>
         </div>
-
       </div>
-
+      <hr>
     </div>
   </section><!-- End Team Section -->
 
