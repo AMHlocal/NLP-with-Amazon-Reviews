@@ -76,8 +76,6 @@ All activities in the Big Data unit will use free tier services. However, it is 
 
   * Click **Save**. Then type **confirm** and click **Confirm**.
 
-    ![Images/confirm_policy.png](Images/confirm_policy.png)
-
     * The object should now be accessible by all.
 
 
