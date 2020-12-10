@@ -84,14 +84,5 @@ All activities in the Big Data unit will use free tier services. However, it is 
 
     ![Images/confirm_policy.png](Images/confirm_policy.png)
 
-  * Next, navigate back into your bucket and check the box next to the image. Click the **Actions** box on the top and select **Make public**.
-
-    ![Images/bucket_public.png](Images/bucket_public.png)
-
-  * Now the image will be displayed when you click on the link.
-
-* You can explore various settings at the bucket level and the file level. Use the tabs at the bucket level to explore the available settings, such as tags:
-
-  ![Images/s306.png](Images/s306.png)
 
 * **Note:** You can remove public access anytime by repeating the steps above and checking all the boxes in **Edit public access settings**.
