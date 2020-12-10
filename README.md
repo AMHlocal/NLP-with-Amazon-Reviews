@@ -47,8 +47,7 @@ Utilizing Amazon AWS we choose to store our datasets in the cloud [S3](https://d
 ______________________________
 ### TABLEAU
 #### Requirements
-* Tableau Public Profile
-    * [Tableau Public](https://public.tableau.com/en-us/s/)
+* [Tableau Public Profile](https://public.tableau.com/en-us/s/)
 
 #### Description
 In order to set the stage and explore the Amazon Reviews Dataset Tableau Public was utlized.
