@@ -36,12 +36,27 @@ ______________________________
     * Note: for the purpose of this project we upload the data to our own Amazon s3 cloud storage.
 
 ### AMAZON S3 STORAGE
-​
 #### Requirements
 * None
 ​
 #### Description
-Walked through making our dataset available in the cloud. Below is a link to the instruction readme for set-up and some notes on the free services.
+Walked through making our dataset available in the cloud. Below is a link to the instruction readme for set-up and some notes on the free amazon services provided.
 [Link to instructions.md](setup-instructions/amazon-S3-setup.md)
 
+## Front-End Development
+______________________________
+### TABLEAU
+#### Requirements
+* Tableau Public Profile
+    * [Tableau Public](https://public.tableau.com/en-us/s/)
 
+#### Description
+In order to set the stage and explore the Amazon Reviews Dataset Tableau Public was utlized.
+
+Three vizzes were created to highlight different features of the data.
+* Star Ratings Votes Over Time - this chart also had Amazon's Stock Price overlayed
+* Votes Over Time
+* Products with Helpful Reviews
+
+All three of these vizzes can be found at the below Tableau Public link:
+[Tableau Public Vizzes Link](https://public.tableau.com/views/Amazon_Review_Vis/StarRatingVotesOverTime?:language=en&:display_count=y&:origin=viz_share_link)
