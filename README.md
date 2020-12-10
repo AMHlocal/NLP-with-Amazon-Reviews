@@ -26,4 +26,22 @@ George Simon, Patrick Leon, Fred Mansfield, Austin Hauck
 - to switch branches: git checkout <branch_name>
 - to upload to repo: git add . --> git commit -m "<descriptive message>" --> git push origin <your_branch>
 
-# ideas
+# Write Up
+
+## Back-End Development
+______________________________
+### DATA USED
+* [Amazon Reviews - Link](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt)
+    * Chosen Dataset: *amazon_reviews_us_Tools*
+    * Note: for the purpose of this project we upload the data to our own Amazon s3 cloud storage.
+
+### AMAZON S3 STORAGE
+​
+#### Requirements
+* None
+​
+#### Description
+Walked through making our dataset available in the cloud. Below is a link to the instruction readme for set-up and some notes on the free services.
+[Link to instructions.md](setup-instructions/amazon-S3-setup.md)
+
+
