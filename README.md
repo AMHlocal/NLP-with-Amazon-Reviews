@@ -35,12 +35,12 @@ ______________________________
     * Chosen Dataset: *amazon_reviews_us_Tools*
     * Note: for the purpose of this project we upload the data to our own Amazon s3 cloud storage.
 
-### AMAZON S3 STORAGE
+### AMAZON S3
 #### Requirements
-* None
+* AWS Profile
 ​
 #### Description
-Walked through making our dataset available in the cloud. Below is a link to the instruction readme for set-up and some notes on the free amazon services provided.
+Utilizing Amazon AWS we choose to store our datasets in the cloud [S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) to access in our Googe Collab coding notebooks. Below is a link to the instruction readme for set-up and some notes on the free amazon services provided.
 [Link to instructions.md](setup-instructions/amazon-S3-setup.md)
 
 ## Front-End Development
