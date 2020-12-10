@@ -54,7 +54,7 @@ ______________________________
 In order to set the stage and explore the Amazon Reviews Dataset Tableau Public was utlized.
 
 Three vizzes were created to highlight different features of the data.
-* Star Ratings Votes Over Time - this chart also had Amazon's Stock Price overlayed
+* Star Ratings Votes Over Time - *this chart also had Amazon's Stock Price overlayed*
 * Votes Over Time
 * Products with Helpful Reviews
 
