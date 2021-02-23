@@ -1,7 +1,3 @@
-# Group - Cobra Kai
-Members:
-George Simon, Patrick Leon, Fred Mansfield, Austin Hauck
-
 ## Introduction
 Early in the project while searching for data, we stumbled across a dataset concerning Enron, an energy company who committed egregious valuation fraud and went bankrupt in the mid-2000's. In the end, we steered away from this dataset, but we decided we still wanted to work with a Natural Learning Processing (NLP) machine. We also wanted to make sure that we worked with Amazon Warehouse Systems to gain experience in a valuable field.
 ## Project Question
@@ -52,3 +48,6 @@ When we ran our data using the IDF, negative word count, and the ratio with a sm
 #### Linear Regression Hardships
 Based on how we ran our NLP machine using Linear Regression, our outcome - the ability to predict the star rating of reviews from the amount of negative words - is inconclusive. If we were to do another NLP machine learning project, we would test more than one linear regression model. These models would start by using a Random Forest to select the best features to analyze; in our case we did not use this because the bulk of our usable data was text.
 After that we would use models such has K-nearest neighbors, Support Vector Machines (SVM), and/or Naïve Bayes. These models would either group the data points closer or, redarding Naïve Bayes, would quantify the likelihood of the event happening based upon the kowledge that the event has occurred in the past.
+
+## Contributors
+George Simon, Patrick Leon, Fred Mansfield, Austin Hauck
