@@ -1,8 +1,9 @@
-## Introduction
-Early in the project while searching for data, we stumbled across a dataset concerning Enron, an energy company who committed egregious valuation fraud and went bankrupt in the mid-2000's. In the end, we steered away from this dataset, but we decided we still wanted to work with a Natural Learning Processing (NLP) machine. We also wanted to make sure that we worked with Amazon Warehouse Systems to gain experience in a valuable field.
+
 ## Project Question
-Therefore, we decided to apply our NLP machine to Amazon reviews, asking ourselves one main question:
-Can we predict a review score based on wording alone?
+Can we predict an Amazon review score given by customers based on wording alone?
+
+## Introduction
+Worked with a Natural Learning Processing (NLP) machine and Amazon Warehouse Systems to gain experience in a valuable field.
 
 
 ______________________________
